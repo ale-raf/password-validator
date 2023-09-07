@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#5e9d5e, rgba(135, 60, 255, 0) 0%),
+    linear-gradient(-75deg, rgb(159, 205, 152) 50%, #5e9d5e 0%);
+}
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  position: absolute;
+  font-size: 18px;
+}
+label.active {
+  position: static;
+  color: grey;
+  font-size: 16px;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: grey;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vw;
+  margin: 0 auto;
+  padding: 20px;
+  background: whitesmoke;
+  border-radius: 5px;
+}
+.fa-lock-open {
+  color: rgb(159, 205, 152);
+}
+.fa-lock {
+  color: rgb(50, 80, 50);
+}
+
+.criterias-list {
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: rgb(50, 80, 50);
+  border-radius: 5px;
+  width: 20vw;
+  list-style: none;
+}
+.criterias-list li {
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+  color: whitesmoke;
+  font-size: 18px;
+}
+.criterias-list li i {
+  margin-right: 15px;
+  font-size: 10px;
+}
+.fa-solid.fa-circle {
+  color: #5e9d5e;
+}
+.fa-solid.fa-check {
+  color: whitesmoke;
+  font-size: 15px;
+}
